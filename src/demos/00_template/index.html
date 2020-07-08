@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React - Template</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script src="../../js/react.min.js"></script>
+    <script src="../../js/react-dom.min.js"></script>
+    <script src="../../js/browser.min.js"></script>
+    <!-- babel trans-piler -->  
+    <!-- lecture 2 
+         ReactDOM.render(
+            <h2>Bill</h2>,
+            document.getElementById('container')
+        ); -->
+    <!--         lecture 3 single components 
+        var Bacon = React.createClass({
+            render: function(){
+                return (<img src="https://www.w3schools.com/images/picture.jpg"></img>);
+             }
+        });
+        ReactDOM.render(
+            <Bacon />,
+            document.getElementById('container')
+        );
+    -->
+    <!--         lecture 4 multi components 
+        var Bacon = React.createClass({
+            render: function(){
+                return (
+                    <div>
+                        <p>bill</p>
+                        <img src="https://www.w3schools.com/images/picture.jpg"></img>
+                        <p>bill</p>
+                    </div>
+                );
+             }
+        });
+        ReactDOM.render(
+            <div>
+                <Bacon/>
+                <Bacon/>
+            </div>,
+            document.getElementById('container')
+        );-->
+        <!-- lec 5 property customises components 
+        var Movie = React.createClass({
+            render: function(){
+                return (
+                    <div>
+                        <h1>{this.props.rank}</h1>
+                        <h1>{this.props.title}</h1>
+                        <h2>{this.props.length}</h2>
+                        <h2>{this.props.genre}</h2>
+                        <h2>{this.props.score}</h2>                
+                        <h2>{this.props.description}</h2>
+                        <h2>{this.props.director}</h2>
+                        <h2>{this.props.stars}</h2>
+                    </div>
+                );
+             }
+        });
+        ReactDOM.render(
+            <div>
+                <Movie 
+                    rank="1"
+                    title="The Shawshank Redemption" 
+                    length="142 min"
+                    genre="Drama"
+                    score="9.3"
+                    description="Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+                    director="Frank Darabont"
+                    stars="Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler"/>
+                <Movie 
+                    rank="2"
+                    title="The Godfather"
+                    length="175 min"
+                    genre="Crime, Drama"
+                    score="9.2"
+                    description="The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+                    director="Francis Ford Coppola"
+                    stars="Marlon Brando, Al Pacino, James Caan, Diane Keaton"/> />
+            </div>,
+            document.getElementById('container')
+        );-->
+        <!-- lec 6 - Event Handling -->
+</head>
+<body>
+    <div id="container"></div>
+    <script type="text/babel">
+        var Comment = React.createClass({
+            render: function(){
+                return (
+                    <div className="board">
+                    <>
+                );
+             }
+        });
+        ReactDOM.render(
+            <div className="board">
+                <Comment
+            </div>,
+            document.getElementById('container')
+        );
+    </script>
+</body>
+</html>
