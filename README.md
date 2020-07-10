@@ -5,20 +5,11 @@ React template followed thenewboston tutorials.
 
 To get started simply download the repo using the link below. All required files are included.
 
-https://github.com/buckyroberts/React-Boilerplate/archive/master.zip
-
-## Setting up Gulp (optional)
-
-You can also use Gulp to add additional build tasks. To use, follow the instructions below.
-
 Navigate to the root directory and  run the following command:
 ```
-> npm install
-```
+> npm install http-server -d```
 
-After modules are installed, you can start watching for SCSS changes using the command:
+After modules are installed, you can start using the command:
 ```
-> gulp
+> npm run start
 ```
-
-You can install more modules and configure them in the **gulpfile.js** file as needed.
